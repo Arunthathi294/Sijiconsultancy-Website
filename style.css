@@ -90,8 +90,8 @@ nav a {
 
 /* LOGO SCROLL SECTION */
 .logo-scroll-section {
-  padding: 60px 0;
-  background: white;
+  padding: 80px 0;
+  background: #fff;
   overflow: hidden;
 }
 
@@ -102,9 +102,8 @@ nav a {
   margin-bottom: 40px;
 }
 
-/* Slider box */
+/* Slider */
 .logo-slider {
-  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -112,36 +111,36 @@ nav a {
 /* Track */
 .logo-track {
   display: flex;
-  width: calc(250px * 10);
-  animation: scroll 25s linear infinite;
+  width: max-content;              /* 🔥 KEY FIX */
+  animation: scroll 30s linear infinite;
 }
 
 /* Logos */
 .logo-track img {
-  width: 180px;
-  margin: 0 30px;
+  width: 150px;                    /* kutty logos */
+  margin: 0 40px;
   object-fit: contain;
   filter: grayscale(100%);
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
-/* Hover effect */
+/* Hover */
 .logo-track img:hover {
   filter: grayscale(0%);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Pause on hover */
 .logo-slider:hover .logo-track {
-  animation-play-state: running;
+  animation-play-state:running;
 }
 
 /* Animation */
 @keyframes scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }
@@ -551,6 +550,7 @@ nav a {
     align-items: center;
   }
 }
+
 
 
 
