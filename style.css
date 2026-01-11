@@ -517,6 +517,20 @@ nav a {
   color: #fafdfb;
 }
 
+.footer-contact a {
+  color: #ffffff;        /* white text */
+  text-decoration: none;
+}
+
+.footer-contact a:visited {
+  color: #ffffff;        /* visited link purple varama */
+}
+
+.footer-contact a:hover {
+  color: #7fd1b9;        /* hover effect (optional) */
+  text-decoration: underline;
+}
+
 /* COPYRIGHT */
 .footer-bottom {
   text-align: center;
@@ -537,6 +551,7 @@ nav a {
     align-items: center;
   }
 }
+
 
 
 
