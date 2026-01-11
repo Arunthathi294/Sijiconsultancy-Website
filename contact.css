@@ -92,7 +92,7 @@ body {
 
 /* CARDS */
 .contact-card {
-  background: #0c3842;
+  background: #337a8c;
   padding: 40px;
   border-radius: 18px;
   box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
@@ -328,6 +328,7 @@ form button {
     align-items: center;
   }
 }
+
 
 
 
