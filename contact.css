@@ -160,6 +160,17 @@ form button {
   opacity: 0.85;
 }
 
+.contact-linkedin a {
+  color: #ffffff;          /* white */
+  text-decoration: none;   /* underline remove */
+  font-weight: 500;
+}
+
+.contact-linkedin a:hover {
+  color: #7fd1b9;          /* hover color (optional) */
+  text-decoration: underline;
+}
+
 /* CONTACT HERO SECTION */
 .contact-hero {
   width: 100%;
@@ -317,6 +328,7 @@ form button {
     align-items: center;
   }
 }
+
 
 
 
