@@ -87,10 +87,9 @@ nav a {
   border: 2px solid #000;
   color: #0f3924;
 }
-
 /* LOGO SCROLL SECTION */
 .logo-scroll-section {
-  padding: 80px 0;
+  padding: 60px 0;
   background: #fff;
   overflow: hidden;
 }
@@ -117,7 +116,7 @@ nav a {
 
 /* Logos */
 .logo-track img {
-  width: 150px;                    /* kutty logos */
+  width: 120px;                    /* kutty logos */
   margin: 0 40px;
   object-fit: contain;
   filter: grayscale(100%);
@@ -132,7 +131,7 @@ nav a {
 
 /* Pause on hover */
 .logo-slider:hover .logo-track {
-  animation-play-state:running;
+  animation-play-state: paused;
 }
 
 /* Animation */
@@ -551,6 +550,7 @@ nav a {
     align-items: center;
   }
 }
+
 
 
 
