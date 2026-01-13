@@ -48,6 +48,131 @@ nav a.active {
   font-weight: 600;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* DESKTOP */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;          /* below navbar */
+    right: 15px;        /* RIGHT SIDE */
+    background: #fff;
+    width: 260px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    flex-direction: column;
+    z-index: 999;
+  }
+
+  nav a {
+    padding: 12px 10px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+/* ================= MOBILE NAV FIX ================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+
+  /* hide desktop menu */
+  nav {
+    display: none !important;   /* 🔥 THIS IS THE KEY */
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    width: 240px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    flex-direction: column;
+    z-index: 9999;
+  }
+
+  /* show when active */
+  nav.active {
+    display: flex !important;
+  }
+
+  nav a {
+    margin: 12px 0;
+    font-size: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ============ MOBILE NAVBAR FIX ============ */
+@media (max-width: 768px) {
+
+  .nav-container {
+    gap: 12px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 15px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 8px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* 🔥 AI PORTAL BUTTON FIX */
+  .btn-nav {
+    white-space: nowrap;       /* ❌ next line stop */
+    width: 80%;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+
+
 .about-page {
   background: #1f5f55;
   padding: 90px 12%;
@@ -118,8 +243,8 @@ nav a.active {
 }
 
 .about-image img {
-  width: 45%;
-  max-width: 160px;
+  width: 35%;
+  max-width: 360px;
 }
 
 .profile-contact {
@@ -153,6 +278,8 @@ nav a.active {
   transform: translateX(4px);
 }
 
+
+/* FOOTER */
 
 .site-footer {
   background: #0f3743;
@@ -254,6 +381,9 @@ nav a.active {
     align-items: center;
   }
 }
+
+
+
 
 
 
