@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 90px;
 }
 
 .logo {
@@ -42,6 +43,48 @@ nav a {
   padding: 8px 16px;
   border-radius: 20px;
 }
+
+/* ================= MOBILE NAV FIX ================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+
+  /* hide desktop menu */
+  nav {
+    display: none !important;   /* 🔥 THIS IS THE KEY */
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    width: 240px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    flex-direction: column;
+    z-index: 9999;
+  }
+
+  /* show when active */
+  nav.active {
+    display: flex !important;
+  }
+
+  nav a {
+    margin: 12px 0;
+    font-size: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
 
 /* HERO */
 .hero {
@@ -550,9 +593,6 @@ nav a {
     align-items: center;
   }
 }
-
-
-
 
 
 
