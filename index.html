@@ -12,20 +12,23 @@
 <!-- NAVBAR -->
 <header class="navbar">
   <div class="nav-container">
+
     <div class="logo">
       <img src="logo1.png" alt="SIJI Logo">
     </div>
-  
-    <nav>
-      <a href="index.html">Home</a>|
-      <a href="about.html">About</a>|
-      <a href="domain.html">Domain Expertise</a>|
-      <a href="house.html">House of Analytics</a>|
-      <a href="case.html">Case Studies</a>|
+
+ 
+    <!-- NAV LINKS -->
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="domain.html">Domain Expertise</a>
+      <a href="house.html">House of Analytics</a>
+      <a href="case.html">Case Studies</a>
       <a href="contact.html">Contact</a>
-      <a class="btn-nav active" href="ai-models.html">AI Models Portal</a>
-     
+      <a class="btn-nav" href="ai-models.html">AI Models Portal</a>
     </nav>
+
   </div>
 </header>
 
@@ -255,12 +258,12 @@
         <li><a href="house.html">House of Analytics</a></li>
         <li><a href="case.html">Case Studies</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="ai-models.html">AI Portal</a></li>
+        <li><a href="ai=models.html">AI Portal</a></li>
       </ul>
     </div>
 
     <!-- CONTACT -->
-   <div class="footer-contact">
+    <div class="footer-contact">
       <h4>Contact</h4>
       <p>📞 +91 75066 40780</p>
       <p href="mailto:contact@sijiconsultancy.com">✉️ contact@sijiconsultancy.com</p>
@@ -282,13 +285,12 @@
 
 </footer>
 
+<script>
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+  }
+</script>
 
 
 </body>
 </html>
-
-
-
-
-
-
