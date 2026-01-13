@@ -426,6 +426,8 @@ body{
 }
 
 
+/* FOOTER */
+
 .site-footer {
   background: #0f3743;
   color: #cfe1e8;
@@ -526,6 +528,10 @@ body{
     align-items: center;
   }
 }
+
+
+
+
 
 
 
