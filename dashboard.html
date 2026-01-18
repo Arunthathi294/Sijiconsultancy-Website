@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>SkyMind AI – Analytics Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f8fb;
+    color: #222;
+  }
+  header {
+    background: #fff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  header h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .container {
+    padding: 40px;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .card h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  .card p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+  .agents .agent {
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .badge {
+    background: #f2b35a;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .progress {
+    width: 180px;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .progress span {
+    display: block;
+    height: 100%;
+    background: #0ea5a4;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>SkyMind AI <small style="color:#777;">Analytics Dashboard</small></h2>
+  <a href="ai-models.html" style="text-decoration:none;">Back to Home</a>
+</header>
+
+<div class="container">
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="card">
+      <h3>Total Sessions</h3>
+      <p>1,247</p>
+    </div>
+    <div class="card">
+      <h3>Avg Response Time</h3>
+      <p>7.2s</p>
+    </div>
+    <div class="card">
+      <h3>Success Rate</h3>
+      <p>97.8%</p>
+    </div>
+    <div class="card">
+      <h3>Active Users</h3>
+      <p>342</p>
+    </div>
+  </div>
+
+  <!-- AGENTS -->
+  <h3>AI Agent Performance</h3>
+  <div class="agents">
+    <div class="agent">
+      <div>
+        <strong>Flight Agent</strong>
+        <span class="badge">156 executions</span><br/>
+        <small>2847ms avg • 98.1% success</small>
+      </div>
+      <div class="progress"><span style="width:98%"></span></div>
+    </div>
+
+    <div class="agent">
+      <div>
+        <strong>Pricing Agent</strong>
+        <span class="badge">156 executions</span><br/>
+        <small>2234ms avg • 99.4% success</small>
+      </div>
+      <div class="progress"><span style="width:99%"></span></div>
+    </div>
+
+    <div class="agent">
+      <div>
+        <strong>Hotel Agent</strong>
+        <span class="badge">142 executions</span><br/>
+        <small>2156ms avg • 97.2% success</small>
+      </div>
+      <div class="progress"><span style="width:97%"></span></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
